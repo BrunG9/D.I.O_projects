@@ -1,0 +1,16 @@
+<section class="d-flex align-items-center justify-content-center flex-wrap">
+    <div class="card mx-2 my-2" style="width: 21rem;" *ngFor="let person of personagens">
+        <div>
+            <img class="card-img-top" [src]="person.image" alt="Card image cap">
+        </div>
+        <div class="card-body">
+            <div class="personName">
+                <a href="" class="card-title">{{ person.name }}</a>
+                <span class="card-text">{{ person.status }} - {{ person.species }}</span>
+            </div>
+          <p class="card-text">{{ person.gender }}</p>
+          <p class="card-text">Origin: {{ person.origin.name }}</p>
+          <p class="card-text">Location: {{ person.location.name }}</p>
+        </div>
+      </div>
+</section>
